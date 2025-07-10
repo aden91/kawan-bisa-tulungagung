@@ -466,7 +466,7 @@
             const systemPrompt = `Anda adalah "KAWAN BISA", chatbot AI ramah dari Sidoarjo. Jawab pertanyaan pengguna dalam bahasa ${currentLang === 'id' ? 'Indonesia' : 'English'}. Konteks: bahaya narkoba, rehabilitasi, hukum di Indonesia, cara hidup sehat. Jawab dengan empatik dan faktual. Jika ada krisis, sarankan hubungi hotline di menu Bantuan.`;
             
             const chatHistory = [{ role: "user", parts: [{ text: systemPrompt + "\n\nPertanyaan Pengguna: " + userInput }] }];
-            const apiKey = "AIzaSyCCNIfFkPr3DlhBIJ9JljyD7P5GgFyTcA4"; 
+            const apiKey = "AIzaSyBIXcBzS1LkaCJENs7Gh-hTARfw6Y2rAiI"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
             const payload = { contents: chatHistory, generationConfig: { temperature: 0.7, topK: 1, topP: 1, maxOutputTokens: 8192 } };
 
